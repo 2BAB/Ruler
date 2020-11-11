@@ -1,7 +1,10 @@
 package me.xx2bab.ruler.base.sampler.common
 
-interface Sampler {
+import kotlinx.coroutines.flow.Flow
+import java.util.concurrent.atomic.AtomicBoolean
 
-    fun sample()
+interface Sampler<T> {
+
+    fun sample(interval: Long, workingFlag: AtomicBoolean): Flow<T>
 
 }

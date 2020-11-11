@@ -1,3 +1,6 @@
+import me.xx2bab.ruler.buildscript.BC.Deps
+import me.xx2bab.ruler.buildscript.implementation
+
 plugins {
     id("com.android.library")
     kotlin("android")
@@ -23,4 +26,8 @@ android {
     }
 
     sourceSets["main"].java.srcDir("src/main/kotlin")
+}
+
+dependencies {
+    implementation(Deps.kotlinGroup)
 }

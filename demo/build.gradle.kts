@@ -1,3 +1,6 @@
+import me.xx2bab.ruler.buildscript.BC.Deps
+import me.xx2bab.ruler.buildscript.implementation
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -35,4 +38,7 @@ android {
 
 dependencies {
     implementation(project(":ruler"))
+    implementation(Deps.kotlinGroup)
+    implementation(Deps.jetpackUIGroup)
+    implementation(Deps.jetpackLifeCycleRuntimeGroup)
 }
