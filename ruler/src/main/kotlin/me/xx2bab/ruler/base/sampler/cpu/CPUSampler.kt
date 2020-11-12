@@ -44,7 +44,7 @@ class CPUSampler : Sampler<CPUSample> {
         if (rawUsageList.size < 17) {
             return ""
         }
-
+        // 13 utime, 14 stime, 15 cutime, 16 cstime
         val cpuTime = (rawUsageList[13].toLong()
                 + rawUsageList[14].toLong()
                 + rawUsageList[15].toLong()
