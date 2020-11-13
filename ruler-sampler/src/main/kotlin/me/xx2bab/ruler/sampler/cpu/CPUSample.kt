@@ -1,4 +1,4 @@
-package me.xx2bab.ruler.base.sampler.cpu
+package me.xx2bab.ruler.sampler.cpu
 
 data class CPUSample(
         val deviceHighDemandLevel: String, // Depends on frequency

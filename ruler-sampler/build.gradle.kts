@@ -2,7 +2,7 @@ import me.xx2bab.ruler.buildscript.BC.Deps
 import me.xx2bab.ruler.buildscript.implementation
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("android.extensions")
 }
@@ -10,13 +10,11 @@ plugins {
 android {
     compileSdkVersion(30)
     defaultConfig {
-        applicationId = "me.xx2bab.ruler.demo"
         minSdkVersion(21)
         targetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
     }
-
     buildTypes {
         getByName("debug") {
             isMinifyEnabled = false
@@ -27,18 +25,9 @@ android {
         isAbortOnError = false
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
     sourceSets["main"].java.srcDir("src/main/kotlin")
-
 }
 
 dependencies {
-    implementation(project(":ruler-sampler"))
     implementation(Deps.kotlinGroup)
-    implementation(Deps.jetpackUIGroup)
-    implementation(Deps.jetpackLifeCycleRuntimeGroup)
 }

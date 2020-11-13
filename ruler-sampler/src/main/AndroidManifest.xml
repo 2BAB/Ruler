@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.xx2bab.ruler.base.sampler">
+    package="me.xx2bab.ruler.sampler">
 
     <application
         android:allowBackup="true">

@@ -1,4 +1,4 @@
-package me.xx2bab.ruler.base.sampler.common
+package me.xx2bab.ruler.sampler.common
 
 import kotlinx.coroutines.flow.Flow
 import java.util.concurrent.atomic.AtomicBoolean

@@ -1,11 +1,11 @@
-package me.xx2bab.ruler.base.sampler.cpu
+package me.xx2bab.ruler.sampler.cpu
 
 import android.os.Process
 import android.util.Log
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import me.xx2bab.ruler.base.sampler.common.Sampler
+import me.xx2bab.ruler.sampler.common.Sampler
 import java.io.File
 import java.util.*
 import java.util.concurrent.atomic.AtomicBoolean
