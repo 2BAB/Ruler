@@ -14,6 +14,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(kotlin("gradle-plugin"))
+    implementation(gradleApi())
     // Please sync it with the one in root build.gradle.kts
     implementation("com.android.tools.build:gradle:4.2.0-alpha16")
 }
